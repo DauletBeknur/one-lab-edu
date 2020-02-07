@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<titlle><mark>Shynara's blog</mark></titlle>
+		<script>
+			document.createElement("aside");
+			document.createElement("figure");
+            document.createElement("figcaption");
+            document.createElement("details");
+            document.createElement("summary");
+            document.createElement("dialog");
+		</script>
+		<style>
+			body {
+				background-color: #E4F7F8 
+			}
+			.choice {
+				float: right;
+				margin-right: 5%;
+
+			}
+			aside {
+				background: #BED6CC;
+                padding: 10px;
+                width: 200px;
+                margin-top: 1%;
+                float: right;
+            }
+            details {
+                margin-top: 20%;	
+            }
+            dialog {
+                background-color: #E6D5F7;
+                font-family: Times; 
+                margin-top: 5%;	
+            }
+            time { 
+            	background: #f0f0f0; }
+            .post {
+            	font-family: Courier New;
+            	font-weight: bold;
+            	font-size: 18px;
+            }
+            .rt {
+            	margin-top: 30%;
+            }
+            figure {
+            	background: #dddddd; 
+                width: 150px; 
+                height: 190px; 
+                float: right; 
+                margin-top: 0%;
+                text-align: center; 
+            }
+            figure img {
+            	width: 150px; 
+                height: 190px; 
+                border: 2px solid #8b8e4b; 
+            }
+            figure p {
+                margin-bottom: 0;
+            }
+            .pr{
+            	margin-top: 10% 
+            }
+		</style>
+	</head>
+	<body>
+		<aside>
+			<p>Recent posts</p>
+			<p>Photos and Videos</p>
+			<p>About me</p>
+		</aside>
+		<div class="choice">
+		<p>Choose the topic:</p>
+		<p><input list="topic">
+			<datalist id="topic">
+				<option value="Lifestyle"></option>
+				<option value="Movies"></option>
+				<option value="Books"></option>
+			</datalist></p>
+		</div>
+		<header>
+			<h1>Personal blog of Shynara Ayanbek</h1>
+		</header>
+		<main>
+		<dialog open>
+			<section>
+			<p class="post"><time>2020/02/06</time> Another wonderful day:)</p>
+		 	<p>Hello to everyone!</p>
+		 	<p>It's Wednesday. Today's temperature is a little bit higher than in other past days.</p>
+		 	<meter value="30" max="100" low="10" high="60">Higher than usual</meter>
+		 <p>Feels like it's almost spring even if we still have about 3 weeks untill it.<br> It's been a while since I posted something related to recommendations. Here's<br> a new one. Recently I watched a really interesting movie which made<br> me rethink some things. The name of the movie is "Green Book".<br> You must watch it. An another interesting thing is that I've known<br> how my favorite anime's name is written in Japanese.<br> It's written below:) </p>
+
+		 	<p><ruby> 千と千尋の神隠し <rp>(</rp><rt>Spirited Away</rt><rp>)</rp></ruby></p>
+		 </section>
+        </dialog>
+		<article>
+			<h2>You are welcome!</h2>
+			<p>I am glad to see you in my blog!<bdi>안녕하세요</bdi> :) </p>
+		</article>
+	    </main>
+		<figure>
+			<p><img src="C:\Users\ayanb\OneDrive\Рабочий стол\ONE Lab\hw1\elements\book.jpg" alt=""></p>
+			<figcaption>Green Book</figcaption>
+		</figure>
+		<div class="rt">
+	     <form id="range" oninput="a.value=parseInt(x.value)">
+           <label for="x">Rate this post:</label>
+           <input type="range" id="x" name="x" value="0">
+        </form>
+        <output form="range" name="a"></output>
+        </div>
+		<details>
+		<summary>For additional info</summary>
+	    Next post will be on the next week.</details>
+	    <nav><a href="1.html">Telegram</a> | <a href="2.html">Instagram</a> |
+       <a href="3.html">Vkontakte</a> | <a href="4.html">Facebook</a></nav>	
+		<footer>
+			Copyright Shynara Ayanbek
+		</footer>
+		<p class="pr">Please wait! Information is updating...</p>
+		<progress max="100" value="25">Updated... <span id="value">25</span>%
+        </progress>
+        <canvas id="myCanvas2" width="200" height="100" style="border:1px solid #000000;"></canvas>
+	</body>
+	<script>
+
+var c = document.getElementById("myCanvas2");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+ctx.stroke(); 
+
+</script type="text/javascript">
+<svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="pink" stroke-width="4" fill="violet" />
+</svg>
+</html>
