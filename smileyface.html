@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smiley face</title>
+    <style>
+        canvas{
+           margin: 100px 0px 0px 465px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+    <script>
+    let canvas = document.getElementById("myCanvas");
+    let ctx = canvas.getContext("2d");
+    ctx.beginPath(); 
+    ctx.arc(200, 200, 120, 0, 2 * Math.PI);
+    ctx.closePath();
+    ctx.fillStyle = "yellow";
+    ctx.fill();
+    ctx.stroke();
+
+    // Eyes
+    ctx.beginPath();
+    ctx.arc(154, 160, 20, 0, 2 * Math.PI);
+    ctx.closePath();
+    ctx.fillStyle = "black";
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(246, 160, 20, 0, 2 * Math.PI);
+    ctx.closePath();
+    ctx.fillStyle = "black";
+    ctx.fill();
+    ctx.stroke();
+
+    // Mouth
+    ctx.beginPath();
+    ctx.moveTo(120, 240);
+    ctx.bezierCurveTo(170, 310, 260, 280, 280, 240);    
+    ctx.lineWidth = 8;
+    ctx.lineCap = "round";
+    ctx.stroke();
+
+    ctx.moveTo(126, 232);
+    ctx.lineTo(112, 242);
+    ctx.stroke();
+
+    ctx.moveTo(274, 232);
+    ctx.lineTo(288, 242);
+    ctx.stroke();
+    </script>
+</body>
+</html>
