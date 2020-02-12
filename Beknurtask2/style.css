@@ -1,0 +1,34 @@
+body{
+  background-image: url("img7.jpg");
+  transition: 5s;
+  font-family: 'Farro', sans-serif;
+  color: white;
+  font-weight: lighter;
+  opacity: 0.95;
+}
+h1{
+  text-align: center;
+  font-size:4em;
+}
+button{
+    background-color: transparent;
+    color: white;
+    width: 100px;;
+    height: 30px;
+}
+.all {
+  display: flex;
+  width: 100%;
+  margin: 70px;
+}
+.second{
+  margin-left: 260px;
+}
+.third{
+  margin-left: 260px;
+}
+footer{
+  margin-top: 330px;
+  text-align: center;
+  font-size: 1.5em;
+}
