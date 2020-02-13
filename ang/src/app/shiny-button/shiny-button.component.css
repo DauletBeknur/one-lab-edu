@@ -1,0 +1,7 @@
+button {
+    display: flex;
+    background: rgb(69, 86, 241);
+    padding: 40px;
+    border-radius: 20px;
+    outline: none;
+}
