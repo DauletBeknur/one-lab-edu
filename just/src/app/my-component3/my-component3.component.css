@@ -1,0 +1,31 @@
+.video {
+  margin-top: 100px;
+  margin-left: 130px;
+  display: flex;
+
+
+}
+.car {
+  background-image: url('phantoml.gif');
+  border:  5px solid black;
+  width: 700px;
+  height: 400px;
+}
+.picture {
+
+  border: 5px solid black;
+  width: 700px;
+  height: 300px;
+  position: absolute;
+  margin-left: 550px;
+  margin-top: 200px;
+  background-color: black;
+  color: #fff;
+  font-size: 1.7em;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+
+}

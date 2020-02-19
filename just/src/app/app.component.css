@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Calibri, sans-serif;
+
+}
+header{
+  text-align: center;
+  height: 10vh;
+  background-color: black;
+  opacity: 0.8;
+}
+
+ul{
+  display: flex;
+}
+li{
+  list-style: none;
+  margin-left: 150px;
+  font-size: 2em;
+}
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 50;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+.foot{
+  background-color: transparent;
+  border-color: transparent;
+  transition: all 0.8s;
+
+}
+.royce{
+
+  margin-top: 700px;
+  width: 300px;
+  height: 150px;
+  background-image: url('royce.png');
+
+
+}
+h2{
+  text-align: center;
+  color: #fff;
+}
+footer{
+  background-color: black;
+}
+.foo{
+  opacity: 0.9;
+  display: flex;
+  height: 50vh;
+}
+.footer1 {
+  width: 50%;
+}
+.map {
+  width: 50%;
+  height: 80%;
+  margin-top: 20px;
+  background: url('mapp.gif');
+  margin-left: 300px;
+}
+.hi {
+  display: block;
+  margin-top: 50px;
+}
+.hi li {
+  color:#fff;
+  font-size: 1.4em;
+  margin: 20px;
+  margin-left: 100px;
+}
