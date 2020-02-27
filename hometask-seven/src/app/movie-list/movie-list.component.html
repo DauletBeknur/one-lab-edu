@@ -1,0 +1,9 @@
+<a routerLink="/home">Home</a>
+<div class="container">
+    <div class="movie-card" *ngFor="let movie of movies">
+        <p>Title: <span>{{movie.title}}</span></p>
+        <p>Genre: <span>{{movie.genre}}</span></p>
+        <p>Country: <span>{{movie.country}}</span></p>
+        <p>Year: <span>{{movie.year}}</span></p>
+    </div>  
+</div>
