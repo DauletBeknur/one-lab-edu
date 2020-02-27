@@ -1,0 +1,26 @@
+.box{
+    padding: 10px;
+    margin: 0 0 20px 40px;
+}
+
+a{
+    text-decoration: none;
+    color: #551db5;
+    font-size: 18px;
+}
+
+button{
+    width: 80px;
+    background-color: DodgerBlue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+label{
+    color: DodgerBlue;
+    font-size: 16px;
+}
