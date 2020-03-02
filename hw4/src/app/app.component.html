@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a routerLink="/page">Main</a></li>
+        <li><a routerLink="/page2/:id">Cullinan</a></li>
+        <li><a routerLink="/page3/:id">Phantom</a></li>
+        <li><a routerLink="/page4/:id">ghost</a></li>
+
+
+
+
+      </ul>
+    </header>
+    <router-outlet></router-outlet>
+    <button #element class="foot" type="button" name="button" [ngStyle]='{"transform": transform}' (click) = "moveRandomly(element)"><a routerLink="/page2/:id"><img class="royce" src="royce.png" alt=""></a></button>
+    <footer><h2>One-lab-edu</h2>
+
+      <div class="foo">
+        <div class="footer">
+          <ul class="hi">
+            <li>address: Rosybakyeva 155</li>
+            <li>country: Kazakhstan</li>
+            <li>number:87786547654</li>
+            <li>creator: Daulet Beknur</li>
+          </ul>
+
+        </div>
+        <div class="map">
+          <img src="mapp.gif" alt="">
+        </div>
+      </div>
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+  </body>
+
+</html>
