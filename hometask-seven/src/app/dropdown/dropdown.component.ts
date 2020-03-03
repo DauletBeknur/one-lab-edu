@@ -1,19 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../services/movie.service';
 import { Movie } from '../services/movie';
-import { Router } from '@angular/router';
-
-
 
 @Component({
-  selector: 'app-movie-list',
-  templateUrl: './movie-list.component.html',
-  styleUrls: ['./movie-list.component.css']
+  selector: 'app-dropdown',
+  templateUrl: './dropdown.component.html',
+  styleUrls: ['./dropdown.component.css']
 })
-export class MovieListComponent implements OnInit {
+export class DropdownComponent implements OnInit {
   movies: Movie[];
+  status: boolean = true;
+  searchText: string;
 
-  constructor(private movieService: MovieService, private router: Router) { }
+  constructor(private movieService: MovieService) { }
 
   ngOnInit(): void {
     this.movieService.getMovies().subscribe(data => {
@@ -26,4 +25,9 @@ export class MovieListComponent implements OnInit {
     });
   }
 
+  drop(){
+    this.status =!this.status;
+  }
+
+  
 }
