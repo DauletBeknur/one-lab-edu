@@ -1,0 +1,6 @@
+<div class="dropdown">
+    <input  type="text" [(ngModel)]="searchText" placeholder="Search" id="dropdown-search" (click)="drop()" >
+    <ul class="dropdown-content"  [ngClass]="status ? 'dropdown-content' : 'show'">
+        <li *ngFor="let movie of movies | filter : searchText : 'title'">{{ movie.title}}</li>
+    </ul>
+</div>

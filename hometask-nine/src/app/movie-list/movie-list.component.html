@@ -1,0 +1,8 @@
+<a routerLink="/home">Home</a>
+<app-dropdown></app-dropdown>
+<mat-grid-list cols="3" rowHeight="2:1">
+        <mat-grid-tile *ngFor="let movie of movies">
+                <mat-card class="movie-card" (click)='gotoPage(movie)'>{{movie.title}}</mat-card>  
+        </mat-grid-tile>
+</mat-grid-list>
+
