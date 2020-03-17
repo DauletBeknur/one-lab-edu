@@ -1,0 +1,23 @@
+
+<ul *ngFor="let c of items| async">
+  <li>{{c.item}}</li>
+</ul>
+
+<!-- <select >
+  <option *ngFor="let c of items| async">{{c.item}}</option>
+
+</select> -->
+
+<div id="myDropdown" class="dropdown-content">
+  <input type="text" placeholder="Search.." id="myInput"  mdbInput (keyup)="filterFunction()">
+  <ul *ngFor="let c of items| async">
+    <a routerLink="/film">{{c.item}}</a>
+  </ul>
+
+  
+</div>
+
+
+
+<br>
+

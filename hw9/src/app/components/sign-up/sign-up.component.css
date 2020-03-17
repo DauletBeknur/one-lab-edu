@@ -1,0 +1,49 @@
+.displayTableCell {
+  margin-top: 250px;
+  margin-left: 40%;
+}
+.formControl {
+  background-color: #C5C6C7;
+  color:#0B0C10;
+  font-size: 1.3em;
+  border-radius: 10px;
+  margin-top: 5px;
+  width: 300px;
+  height: 30px;
+}
+
+p {
+  margin-left: 30px;
+  color: #66FCF1;
+  font-size: 2em;
+  margin-left: 100px;
+}
+.btnPrimary {
+  background-color: transparent;
+  color: #66FCF1;
+  margin-top: 10px;
+  margin-left: 200px;
+  border-radius: 10px;
+  width: 100px;
+  height: 25px;
+  font-size: 1.1em;
+}
+.googleBtn{
+  background-color: transparent;
+  color:#66FCF1;
+  font-size: 1.3em;
+  border-radius: 10px;
+  margin-top: 5px;
+  width: 300px;
+  height: 30px;
+  margin-top: 30px;
+}
+.login {
+  background-color: transparent;
+  color:#66FCF1;
+  font-size: 1.3em;
+  border-radius: 10px;
+  margin-top: 5px;
+  width: 300px;
+  height: 30px;
+}
