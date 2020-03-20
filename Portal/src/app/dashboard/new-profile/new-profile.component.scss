@@ -1,0 +1,210 @@
+.wrapper{
+    padding: 40px;
+    background-color: #F6F6F6;
+    display: grid;
+    grid-gap: 30px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 5px;
+}
+.scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 20px;
+}
+.scroll::-webkit-scrollbar-thumb {
+    background-color: #6E6E6E;
+    outline: 1px solid slategrey;
+    border-radius: 5px;
+}
+
+.person{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    grid-gap: 20px;
+}
+
+.person_img{
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(53, 53, 53, 0.25);
+    text-align: center;
+}
+
+.person_img_info {
+    h2{
+        padding-bottom: 10px;
+    }
+    p{
+        padding-bottom: 40px;
+    }
+    img{
+    width: 180px;
+    height: 180px;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin: 25px 0;
+    }
+}
+
+.person_img_btn{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 25px 25px 25px;
+        button{
+            background-color: #fff;
+            border: none;
+            outline: none;
+        }
+        button:hover{
+            color: rgb(248, 82, 82);
+            cursor: pointer;
+        }
+}
+
+.person_info_bio{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(53, 53, 53, 0.25);
+    padding: 20px 15px;
+    margin-bottom: 20px;
+        h3{
+            padding-bottom: 15px;
+            border-bottom: solid 1px #F6F6F6;
+        }
+        p{
+            padding-top: 20px;
+        }
+}
+
+.person_info_contact{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(53, 53, 53, 0.25);
+    padding: 20px 15px;
+        .person_info_contact_type{
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+                p{
+                    font-weight: 500;
+                    font-size: 18px;
+                    padding-bottom: 10px;
+                        span{
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: rgb(58, 56, 56);
+                        }
+                }
+        }
+        h3{
+            padding-bottom: 15px;
+            border-bottom: solid 1px #F6F6F6;
+        }
+}
+
+.description{
+    display: grid;
+    grid-template-columns: 350px 1fr 1fr;
+    grid-gap: 20px;
+        div{
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(53, 53, 53, 0.25);
+            text-align: center;
+            padding: 20px;
+                p{
+                    padding: 30px 0 10px 0;
+                    font-size: 28px;
+                    font-weight: 500;
+                }
+        }
+}
+
+.description_project, .description_task{
+    p{
+        margin-top: 20px;
+    }
+}
+
+.activity{
+    display: grid;
+    grid-template-columns: 350px 1fr 1fr;
+    grid-gap: 20px;
+        div{
+            background-color: #fff;
+        }
+}
+
+.activity_team{
+    box-shadow: 0 2px 5px rgba(53, 53, 53, 0.25);
+    padding: 20px 15px;
+    text-align: center;
+        h2{
+            padding-bottom: 20px;
+            border-bottom: solid 1px #F6F6F6;
+        }
+}
+
+.activity_team_members{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 15px;
+        div{
+            padding: 15px;
+            text-align: center;
+                p{
+                    font-size: 13px;
+                    padding-top: 8px;
+                }
+        }
+        img{
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            border-radius: 50%;
+        }
+}
+
+.activity_info{
+    box-shadow: 0 2px 5px rgba(53, 53, 53, 0.25);
+    padding: 20px 15px;
+        h2{
+            padding-bottom: 20px;
+            border-bottom: solid 1px #F6F6F6;
+        }
+}
+
+.activity_info_rec{
+    list-style: none;
+    padding: 30px 25px;
+    height: 200px;
+    overflow-y: scroll;
+        li{
+            font-weight: 600;
+            padding: 10px 0;
+                span{
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+        }
+        li::before {
+            content: "\2022";
+            color: red;
+            font-weight: bold;
+            display: inline-block; 
+            width: 15px;
+            margin-left: -1em;
+          }
+}
+
+.activity_perform{
+    box-shadow: 0 2px 5px rgba(53, 53, 53, 0.25);
+    padding: 20px 15px;text-align: center;
+        h2{
+            padding-bottom: 20px;
+            border-bottom: solid 1px #F6F6F6;
+        }
+        img{
+            width: 300px;
+            height: 200px;
+            padding-top: 30px;
+        }
+}
