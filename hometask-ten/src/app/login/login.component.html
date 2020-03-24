@@ -1,0 +1,15 @@
+<button id="list" (click)="signOut()" *ngIf="userService.userData | async">Logout</button>
+
+<a id="signup" routerLink="/register" *ngIf="!(userService.userData | async)">Sign Up</a>
+
+
+<div *ngIf="!(userService.userData | async)">
+    <h1>Login</h1>
+    <input type="text" [(ngModel)]="login" placeholder="login">
+    <input type="password" [(ngModel)]="password" placeholder="password">
+
+    <button (click)="signIn()">Login</button>
+</div>
+<h1 *ngIf="userService.userData | async">Hello {{ (userService.userData | async)?.email  }}</h1>
+<pre>{{(loading$ | async) | json }}</pre>
+
