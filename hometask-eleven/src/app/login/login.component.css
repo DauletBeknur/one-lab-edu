@@ -1,0 +1,15 @@
+.login-card{
+    max-width: 400px;
+    display: grid;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.login-title{
+    margin: auto;
+}
+
+.login-form{
+    max-width: 400px;
+    display: grid;
+}

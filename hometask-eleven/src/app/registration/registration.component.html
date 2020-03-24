@@ -1,0 +1,40 @@
+<mat-card class="registration-card">
+    <mat-card-header class="reg-title">
+        <mat-card-title>
+            Registration 
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="registration-form" (ngSubmit)="submit($event)" [formGroup]="form">
+            <mat-form-field appearance="fill">
+                <mat-label>Name</mat-label>
+                <input name="name" type="text" placeholder="Enter your name" matInput formControlName="name">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Surname</mat-label>
+                <input name="surname" type="text" placeholder="Enter your surname" matInput formControlName="surname">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input name="email" type="email" placeholder="Enter email" matInput formControlName="email">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Telefon</mat-label>
+                <input name="tel" type="text" placeholder="Enter telfon number" matInput formControlName="tel">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Login</mat-label>
+                <input matInput name="login" placeholder="Enter Login" formControlName="login">
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Password</mat-label>
+                <input name="password" type="password" placeholder="Enter password" matInput formControlName="password">
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Password Verification</mat-label>
+                <input name="pasVerification" type="password" placeholder="Enter password" matInput formControlName="pasVerification">
+            </mat-form-field>
+              <button type="submit" mat-button>Sign up</button>
+        </form>
+    </mat-card-content>
+</mat-card>
