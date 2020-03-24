@@ -1,0 +1,182 @@
+body {
+    height: 80vh;
+    margin: 0;
+    padding: 0px;
+}
+.all{
+    height: 80vh;
+    display: flex;
+    margin-left: 70px;;
+}
+.img1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 360px;
+}
+.box {
+    width: 330px;
+    height: 450px;
+    margin-left: 70px;
+    animation: up 3s ease 1.5s;
+    position: relative;
+    border: 2px solid #403938;;
+    top: 650px;
+    animation-iteration-count: 0.9;
+    animation-fill-mode: forwards;
+    opacity: 0.7;
+
+}
+.box1 {
+    margin-left: 70px;
+    width: 330px;
+    height: 500px;
+    animation: up1 3s ease 1s;
+    position: relative;
+    border: 2px solid grey;
+    top: 650px;
+    animation-iteration-count: 0.6s;
+    animation-fill-mode: forwards;
+    opacity: 0.7;
+
+}
+.box2 {
+    margin-left: 70px;
+    width: 330px;
+    height: 550px;
+    animation: up2 3s ease 0.3s;
+    position: relative;
+    border: 2px solid grey;
+    top: 650px;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes up {
+    to{
+        top: 450px;
+
+    }
+    
+    100% {
+        top: 150px;
+
+    }
+
+
+}
+
+
+@keyframes up1 {
+    to{
+        top: 450px;
+
+    }
+    
+    100% {
+        top: 100px;
+
+    }
+
+
+}
+
+
+@keyframes up2 {
+    to{
+        top: 450px;
+
+    }
+    
+    100% {
+        top: 50px;
+
+    }
+
+
+}
+.all1 {
+    margin-left: 150px;
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+}
+h5 {
+    margin-top: 15px;
+    margin-left: 20px;
+    color: #403938;
+    text-decoration-style: dashed;
+
+}
+
+.img2 {
+    position: absolute;
+    padding-right: 180px;
+    background-position: right;
+    width: 500px;
+    height: 450px;
+    z-index: 0;
+}
+
+p {
+    z-index: 100;
+    display: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Segoe UI';
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    animation: fade .5s linear forwards;
+  }
+  
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .box:hover p {
+    height: 450px;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  .text {
+      word-wrap: break-word;
+      text-align: center;
+      transform: rotate(270deg);
+      font-size: 4em;
+      margin-top: 200px;
+      text-transform: uppercase;
+      position: absolute;
+      z-index: 0;
+      display: block;
+  }
+
+  .text2 {
+      z-index: 100;
+      text-align: center;
+      font-size: 1em;
+      display: none;  
+      text-transform: uppercase;
+      background: rgba(0, 0, 0, 1);
+      color: white;
+      padding-top: 200px;
+      padding-right: 20px;
+      padding-left: 20px;
+  
+
+
+  }
+
+  .box1:hover .text2  {
+      display: block;
+      cursor: pointer;
+      height: 500px;
+  }
+
