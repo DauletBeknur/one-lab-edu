@@ -1,0 +1,32 @@
+
+
+<div >
+   
+  <input id="text3" type="text" [(ngModel)]="value"  placeholder="color">
+  <button (click)="changeColor()">ChangeColor</button>
+  <br>
+
+  <input id="text4" type="text" [(ngModel)]="value1"  placeholder="text">
+  <button (click)="changeTitle()">ChangeTitle</button>
+</div>
+
+<div class="container">
+  <table class="table table-trapped">
+      <thead>
+         <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Profile</th>
+          <tr>
+       </thead>
+     
+   <tbody>
+       <tr *ngFor="let data of userData">
+           <td>{{data.name}}</td>
+           <td>{{data.addr}}</td>
+           <td>{{data.profile}}</td>
+           <td><button class="btn btn-primary" (click)="getCurrentUser(data)">Filtr</button></td>
+        </tr>
+
+  </table>
+</div>
