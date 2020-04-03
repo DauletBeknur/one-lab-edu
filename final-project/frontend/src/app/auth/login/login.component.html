@@ -1,0 +1,27 @@
+<div class="container">
+    <mat-card class="login-card mat-elevation-z5" >
+        <mat-grid-list cols="2" rowHeight="80vh">
+            <mat-grid-tile >
+                <div class="login-content">
+                    <a routerLink="/landing"><h1><span>Free</span>Space</h1></a>
+                    <h3>Login</h3>
+                    <form class="login-form" (ngSubmit)="signIn()" [formGroup]="form">
+                        <mat-form-field appearance="legacy">
+                        <mat-label>Login</mat-label>
+                        <input matInput name="login" placeholder="Enter Login" formControlName="login">
+                        </mat-form-field>
+                        <mat-form-field appearance="legacy">
+                        <mat-label>Password</mat-label>
+                        <input name="password" type="password" placeholder="Enter password" matInput formControlName="password">
+                        </mat-form-field>
+                        <button type="submit" [disabled]="form.invalid" mat-button>Log in</button>
+                    </form>
+                    <p>Don't have a profile! Let's   <a routerLink="/signup"> Sign up</a></p>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <img src="./assets/img/4.jpg" alt="Img1">
+            </mat-grid-tile>
+        </mat-grid-list>            
+    </mat-card>
+ </div>   

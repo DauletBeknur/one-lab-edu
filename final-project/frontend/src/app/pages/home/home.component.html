@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="header">
+    <div class="header_logo">
+      <h1><span>Free</span>Space</h1>
+    </div>
+    <nav>
+      <a routerLink="/home">Home</a>
+      <a routerLink="/landing">Log out</a>
+    </nav>
+  </div>
+  <div class="wrapper">
+  <div class="about">
+    <img src="assets/img/main-building.jpg" alt="Main-building">
+    <div>
+      <h1>South Business Center</h1>
+      <p>South Business Center is a 12-floor tower; 
+        the concept of the office building is based on the principle of providing universal 
+        opportunities at one time and in one place
+      </p>
+      <p>The main advantages of the Business Center: <br>
+
+        • exclusive premises in the area of Astana international financial center; <br>
+        
+        • estimated number of employees of Astana international financial center is about 30 thousand people;<br>
+        
+        • high ceilings of commercial premises (6 meters), which create an atmosphere of multidimensional space and allow air to circulate freely throughout the room;<br>
+        
+        • the estimated number of employees of “Aura”  BC is about 2 thousand people;</p>
+    </div>
+  </div>
+  <mat-grid-list cols="3" rowHeight="500px">
+      <mat-grid-tile *ngFor="let office of officess">
+          <mat-card class="example-card">
+              <mat-card-header>
+                <mat-card-title class="card-title" (click)='gotoPage(office)'>{{office.title}}</mat-card-title>
+                <mat-card-subtitle>{{office.info}}</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="{{office.img}}" alt="Photo of a office" >
+              <mat-card-content>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipi sicing elit. Similique voluptas debitis, 
+                  quidem magni quod  consectetur odit sequi! Debitis magnam voluptas corporis optio?
+                </p>
+              </mat-card-content>
+            </mat-card>
+      </mat-grid-tile>
+  </mat-grid-list>
+    </div>
+  </div>

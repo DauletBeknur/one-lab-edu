@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="header">
+        <div class="header_logo">
+          <h1><span>Free</span>Space</h1>
+        </div>
+        <nav>
+          <a routerLink="/home">Home</a>
+          <a routerLink="/landing">Log out</a>
+        </nav>
+      </div>
+      <div class="story">
+          <app-stories></app-stories>
+      </div>
+      
+      <div class="wrapper" *ngFor="let office of offices">
+        <div class="content-div" *ngIf="selectedId==office._id">
+            <img  src="{{office.img}}" alt="img">
+            <div>
+                <h2>{{office.title}}</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatem fugiat ipsam amet earum, delectus itaque ipsum quas, aliquam
+                     inventore voluptas vitae consequatur 
+                    hic quam repudiandae blanditiis quos. Illo, sed harum!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatem fugiat ipsam amet earum, delectus itaque ipsum quas, aliquam
+                    inventore voluptas vitae consequatur 
+                    hic quam repudiandae blanditiis quos. Illo, sed harum!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatem fugiat ipsam amet earum, delectus itaque ipsum quas, aliquam
+                    inventore voluptas vitae consequatur 
+                    hic quam repudiandae blanditiis quos. Illo, sed harum!</p>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>

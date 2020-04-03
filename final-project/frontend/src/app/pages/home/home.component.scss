@@ -1,0 +1,57 @@
+.header{
+  color:#2d3f4e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 70px ;
+      .header_logo{
+        cursor: pointer;
+        span{
+          color: rgb(255, 4, 4);
+        }
+      };
+      nav{
+        a{
+          text-decoration: none;
+          cursor: pointer;
+          padding: 0 20px;
+        }
+      }
+}
+
+.about{
+  color:#2d3f4e;
+  padding: 45px 67px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+    div{
+      text-align: center;
+        p{
+          font-size: 21px;
+          padding: 13px 0;
+        }
+    };
+    img{
+      max-width: 500px;
+    }
+}
+
+.wrapper{
+  background-color: #f6f7f8;
+}
+
+.example-card {
+    max-width: 300px;
+    img{
+      max-width: 400px;
+      height: 250px;
+      }
+}
+
+
+
+.card-title:hover{
+  color:rgb(255, 52, 52);
+  cursor: pointer;
+}

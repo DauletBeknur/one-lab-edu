@@ -1,0 +1,41 @@
+.content{
+    padding: 0;
+    position: relative;
+}
+
+img{
+    width: 300px;
+    height: 400px; 
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  
+  #arrow-left {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 30px;
+  }
+  
+  #arrow-right {
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 30px;
+  }
+
+  .nothing{
+      display: none;
+  }
+
+  .block{
+      display: block;
+  }

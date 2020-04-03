@@ -1,0 +1,13 @@
+[
+    {
+    "id": 1,
+    "title": "Object 1 from json file",
+    "img": "https://i.ibb.co/0JftqFH/1.jpg" 
+    },
+    {
+    "id": 2,
+    "title": "Object 2 from json file",
+    "img": "https://i.ibb.co/SVzyn0X/2.jpg" 
+
+    }
+]

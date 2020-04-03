@@ -1,0 +1,57 @@
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/img/auth-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+}
+
+.signup-card{
+    width: 60%;
+    min-height: 80%;
+    margin: auto;
+    padding: 0;
+}
+
+.signup-content{
+    width: 100%;
+    // height: 100%;
+    text-align: center;
+    // overflow-y: scroll;
+}
+
+.signup-content p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.signup-content a{
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(245, 39, 39);
+    cursor: pointer;
+}
+
+.signup-form{
+    width: 80%;
+    display: grid;
+    margin: auto;
+}
+
+// .scroll::-webkit-scrollbar {
+//     width: 1px;
+// }
+// .scroll::-webkit-scrollbar-track {
+//     box-shadow: inset 0 0 6px rgba(255, 255, 255, 0);
+// }
+// .scroll::-webkit-scrollbar-thumb {
+//     background-color: rgba(255, 255, 255, 0);
+//     outline: none;
+// }
+
+img{
+    max-width: 450px;
+
+}

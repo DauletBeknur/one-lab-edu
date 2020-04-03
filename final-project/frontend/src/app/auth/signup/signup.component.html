@@ -1,0 +1,46 @@
+<div class="container">
+    <mat-card class="signup-card mat-elevation-z5">
+        <mat-grid-list cols="2" rowHeight="80vh">
+            <mat-grid-tile>
+                <div class="signup-content ">
+                    <h3>Registration</h3>
+                    <form class="signup-form" (ngSubmit)="createNewUser(loginInput.value,emailInput.value, passwordInput.value)" [formGroup]="form">
+                        <!-- <mat-form-field appearance="legacy">
+                            <mat-label>Name</mat-label>
+                            <input name="name" type="text" placeholder="Enter your name" matInput formControlName="name">
+                        </mat-form-field>
+                        <mat-form-field appearance="legacy">
+                            <mat-label>Surname</mat-label>
+                            <input name="surname" type="text" placeholder="Enter your surname" matInput formControlName="surname">
+                        </mat-form-field> -->
+                        <mat-form-field appearance="legacy">
+                            <mat-label>Email</mat-label>
+                            <input #emailInput name="email" type="email" placeholder="Enter email" matInput formControlName="email">
+                        </mat-form-field>
+                        <!-- <mat-form-field appearance="legacy">
+                            <mat-label>Telefon</mat-label>
+                            <input name="tel" type="text" placeholder="Enter telfon number" matInput formControlName="tel">
+                        </mat-form-field> -->
+                        <mat-form-field appearance="legacy">
+                            <mat-label>Login</mat-label>
+                            <input #loginInput matInput name="login" placeholder="Enter Login" formControlName="login">
+                        </mat-form-field>
+                        <mat-form-field appearance="legacy">
+                            <mat-label>Password</mat-label>
+                            <input name="password" type="password" placeholder="Enter password" matInput formControlName="password">
+                        </mat-form-field>
+                        <mat-form-field appearance="legacy">
+                            <mat-label>Password Confirm</mat-label>
+                            <input #passwordInput name="pasVerification" type="password" placeholder="Enter password" matInput formControlName="pasVerification">
+                        </mat-form-field>
+                        <button [disabled]="form.invalid" type="submit" mat-button>Sign up</button>
+                    </form>
+                    <p>Already have a profile! Go to <a routerLink="/login"> Login</a></p>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile >
+                <img src="./assets/img/7.jpg" alt="Img7">
+            </mat-grid-tile>
+        </mat-grid-list>
+    </mat-card>
+</div>
