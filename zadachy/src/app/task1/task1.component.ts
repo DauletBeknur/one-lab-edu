@@ -9,8 +9,6 @@ import { FormControl } from '@angular/forms';
 export class Task1Component implements OnInit {
 
   name = new FormControl('');
-  value = this.name.value;
-  rgb = `background-color: rgb(${this.value})`;
   
   constructor() { }
 
