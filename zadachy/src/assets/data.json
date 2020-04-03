@@ -1,0 +1,18 @@
+[
+    {
+        "title": "task1",
+        "color": "blue"
+    },
+    {
+        "title": "task2",
+        "color": "red"
+    },
+    {
+        "title": "task3",
+        "color": "yellow"
+    },
+    {
+        "title": "task4",
+        "color": "green"
+    }
+]

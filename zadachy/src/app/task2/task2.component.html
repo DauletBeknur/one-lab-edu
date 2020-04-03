@@ -1,0 +1,7 @@
+<form class="formik" (ngSubmit)="submit($event)" [formGroup]="form">
+    <mat-form-field appearance="fill">
+      <mat-label>Input</mat-label>
+      <input matInput name="name" placeholder="Enter Name" formControlName="name">
+    </mat-form-field>
+    <button type="submit" mat-button>Submit</button>
+  </form>
