@@ -1,0 +1,38 @@
+<div class="container">
+   <div class="all">
+      <div class="search">
+         <div class="md-form">
+            <input type="search" [(ngModel)]="searchText" placeholder="Search text">
+          </div>
+          <ul *ngFor="let data of moviesname  | filter: searchText">
+             <a [routerLink]="'/dashboard'" >{{data}}</a>
+          </ul>
+   
+      </div>
+      <div class="words">
+         <p>Watch with US</p>
+         <div class="one">
+            <div class="one1"></div>
+            <div class="one2"></div>
+            <div class="one3"></div>
+         </div>
+
+         <div class="one">
+            <div class="one1"></div>
+            <div class="one2"></div>
+            <div class="one3"></div>
+         </div>
+
+         <div class="one">
+            <div class="one1"></div>
+            <div class="one2"></div>
+            <div class="one3"></div>
+         </div>
+      </div>
+      
+
+   </div>
+  
+  
+
+</div>

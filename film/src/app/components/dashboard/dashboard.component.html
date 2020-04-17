@@ -1,0 +1,17 @@
+<div *ngFor="let movie of movies">
+    <span *ngIf='id==movie.name'></span>
+
+        {{movie.name}}
+        <img src="./img/{{movie.img}}" alt="">
+    
+        <p><span>Descripion: </span> {{movie.description}}</p>
+        <p><span>Genre: </span> {{movie.genres}}</p>
+        <p><span>Rate: </span> {{movie.rate}}</p>
+        <p><span>Lenght: </span> {{movie.length}}</p>
+
+        
+<button ><a [routerLink]="'/page1'">Back</a> </button>
+         
+    
+   
+</div>

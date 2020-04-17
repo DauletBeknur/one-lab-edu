@@ -1,0 +1,47 @@
+.containter {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.all{
+    display: flex;
+}
+.search{
+    width: 30%;
+}
+.words{
+    width: 70%;
+
+}
+.one {
+    margin: 100px;
+    width: 100%;
+    display: flex;
+}
+.one1{
+    width: 50%;
+    background-color: red;
+    height: 40vh;
+    margin-left: 20px;
+
+}
+.one2{
+    width: 50%;
+    background-color:yellow;
+    height: 40vh;
+    margin-left: 20px;
+    
+}
+.one3{
+    width: 50%;
+    background-color:purple;
+    height: 40vh;
+    margin-left: 20px;
+}
+
+p{
+    padding-top: 50px;
+    text-align: center;
+    padding-left: 150px;
+    font-size: 2em;
+    color: blueviolet;
+}
