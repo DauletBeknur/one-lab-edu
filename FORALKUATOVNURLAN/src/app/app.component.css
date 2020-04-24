@@ -1,0 +1,177 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.tabl {
+    position: absolute;
+    z-index: 0;
+    display: block;
+    height: 500px;
+    width: 800px;
+    overflow-y:scroll;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9;
+    min-width: 400px;
+    border-bottom: 2px solid teal;
+}
+
+.tabl thead tr th {
+    padding-left: 0px;
+    background-color:teal;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 65px;
+    font-size: 1.4em;
+    margin-left: 10px;
+}
+.tabl tr td {
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+}
+
+.tabl tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+
+#secondtabl {
+    margin-top: 20px;
+    margin-left: 80px;
+    width: 600px;
+}
+#secondtabl tr th {
+    background-color:teal;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px 30px;
+    font-size: 0.9em;
+}
+#secondtabl tr td {
+    font-family: 'Monda', sans-serif;
+    text-align: center;
+    font-size: 0.8em;
+}
+#secondtabl tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.secondtabl {
+    display: block;
+}
+.close {
+    margin-bottom: 5px;
+    position: relative;
+    background-color: transparent;
+    color: red;
+    font-size: 1.3em;
+    text-align: center;
+    border: none;
+
+}
+.popup {
+    z-index: 100;
+    width: 800px;
+    height: 200px;
+    
+}
+.newtable {
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+}
+
+
+.show {
+    display: none;
+}
+.input {
+    width: 800px;
+    height: 30px;
+
+}
+hr{
+    margin: 40px;
+    background-color:teal;
+
+}
+h1 {
+    font-size: 2.2em;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    color: #009879;
+}
+.graph {
+    z-index: 200;
+    width: 75%;
+    height: 30%;
+    display: none;
+    padding-left: 60px;
+}
+.all{
+    display: flex;
+}
+.container{
+    margin-left: 30px;
+}
+.container2 {
+    margin-left: 30px;
+    width: 600px;
+    height: 560px;
+}
+
+.oil {
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 500px;
+    height: 500px;
+    
+}
+.oil tr th {
+    background-color: tan;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px 30px;
+    font-size: 1.4em;
+    font-family: 'EB Garamond', serif;
+ 
+}
+.oil tr td {
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+    font-size: 0.9em;
+}
+.oil tr:nth-of-type(even) {
+    background-color: #B6BD8E;
+}
+.picture{
+    margin-left: 60px;
+    font-size: 1.5em;
+    border:2px  solid teal;
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    color: teal;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.table2{
+    position: absolute;
+    z-index: 0;
+   
+}
+
+
+
+.graph2 {
+    margin-top: 100px;
+    display: none;
+    z-index: 100;
+    width: 600px;
+    height: 800px;
+}

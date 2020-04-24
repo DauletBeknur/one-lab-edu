@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Forwork</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Monda&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Мониторинг цен</h1>
+  <hr>
+  <div class="all">
+    <div class="container">
+      <input type="text" class="input" (keyup)="filter($event)" placeholder="Поиск по наименованию">
+      <div class="tabl">
+          <table id="tabl" class="table table-trapped">
+            <thead id="myHeader">
+              <tr>
+                  <th>name</th>
+                  <th>min цена</th>
+                  <th>max цена</th>
+                  <th>average цена</th>
+                <tr>
+            </thead>
+          
+      
+          
+              <tr *ngFor="let data of userData" [attr.name]="data.name">
+                <td ><button class="newtable"  id="x2" (click)='show(data.name)' [value]="data.name">{{data.name}}</button></td>
+                <td>{{data.min}}</td>
+                <td>{{data.max}}</td>
+                <td>{{data.average}}</td>
+  
+            </tr>
+          
+        </table>
+  
+      </div>
+      
+   
+      <div class="popup" >
+          <table class="secondtabl" id="secondtabl"  *ngIf="secondTable">
+            <tr>
+                <th>Название района</th>
+                <th>min цена</th>
+                <th>max цена</th>
+                <th>average цена</th>
+                <button class="close" (click)='hide()'>x</button>
+               
+            </tr>
+            
+          <tr *ngFor="let v of val">
+              <td>{{v.name}}</td>
+              <td>{{v.min}}</td>
+              <td>{{v.max}}</td>
+              <td>{{v.average}}</td>
+            </tr>
+        </table>
+  
+      
+      </div>
+      <div class="graph" id="graph">
+        <canvas id="lineChart"></canvas>
+      </div>
+    </div>
+
+    <div class="container2">
+      <button class="picture" (click)="close()">Graph &nbsp; ↓</button>
+      <button class="picture" (click)="open()">Table &nbsp; ↑</button>
+      <div class="table2" id="table2">
+        <table class="oil" id="oil">
+           <tr>
+             <th>название</th>
+             <th>цена</th>
+             <th>%</th>
+           </tr>
+
+           <tr *ngFor="let o of oil">
+            <td>{{o.name}}</td>
+            <td>{{o.price}}</td>
+            <td id="change">{{o.percentage}}</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="graph2" id="graph2">
+        <canvas id="chart"></canvas>
+      </div>
+
+    </div>
+  </div>
+  
+
+  
+  
+
+  
+</body>
+</html>
